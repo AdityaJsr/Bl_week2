@@ -1,3 +1,11 @@
+"""
+Title - Write a Python to display the given string in list and tuple.
+Author name - Aditya Kumar
+Ceation time - ‎‎02 ‎March ‎2021 ‏‎
+Modified time - ‎‎‎02 ‎March ‎2021‎
+
+"""
+
 def user_input():
     try:
         userInput = input("Enter the comma sperated number here : ").split(',')
