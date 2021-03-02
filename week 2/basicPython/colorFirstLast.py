@@ -1,6 +1,11 @@
 """
-Write a Python program to display the first and last colors from the following list
+Title - Write a Python program to display the first and last colors from the following list.
+Author name - Aditya Kumar
+Creation time - ‎‎02 ‎March ‎2021
+Modified time - ‎‎‎02 ‎March ‎2021‏‎
+
 """
+
 # List of the color.
 color_list = ["Red","Green","White" ,"Black"]
 
