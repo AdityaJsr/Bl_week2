@@ -1,6 +1,11 @@
-'''
-Write a Python program to calculate number of days between two dates
-'''
+"""
+Title - Write a Python program to calculate number of days between two dates.
+Author name - Aditya Kumar
+Ceation time - ‎‎02 ‎March ‎2021 ‏‎
+Modified time - ‎‎‎02 ‎March ‎2021‎
+
+"""
+
 from datetime import date 
 
 startDate = date(2014, 7, 2)
