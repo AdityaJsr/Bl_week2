@@ -1,3 +1,11 @@
+"""
+Title - Write a Python program to display the entered string in reverse manner.
+Author name - Aditya Kumar
+Ceation time - ‎‎02 ‎March ‎2021 ‏‎
+Modified time - ‎‎‎02 ‎March ‎2021‎
+
+"""
+
 def user_input():
     try:
         name = input("Enter your name to reverse : ")
