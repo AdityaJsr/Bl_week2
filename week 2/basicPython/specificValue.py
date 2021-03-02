@@ -1,7 +1,11 @@
 """
-Write a Python program to check whether a specified value is contained in a group of values
+Title - Write a Python program to check whether a specified value is contained in a group of values.
+Author name - Aditya Kumar
+Ceation time - ‎‎02 ‎March ‎2021 ‏‎
+Modified time - ‎‎‎02 ‎March ‎2021‎
 
 """
+
 
 def user_input():
     userInput = list(input("Enter the main list : ").split(','))
