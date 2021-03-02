@@ -1,8 +1,10 @@
-'''
-Write a Python program to get the name of the host on which the routine is running.
+"""
+Title - Write a Python program to get the name of the host on which the routine is running.
+Author name - Aditya Kumar
+Ceation time - ‎‎02 ‎March ‎2021 ‏‎
+Modified time - ‎‎‎02 ‎March ‎2021‎
 
-'''
-
+"""
 
 
 import socket
