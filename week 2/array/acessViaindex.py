@@ -21,7 +21,7 @@ def user_input():
             x = input("Enter the "+str([i])+"th element : ")
             a.append(int(x))
         except Exception as e:
-            print("Enterd value ran into an exception ")
+            print("Enterd value ran into an exception ", e)
     print(a)
     return(a)
 
