@@ -6,10 +6,10 @@ Modified time - ‎‎‎04 ‎March ‎2021‎
 
 """
 
-student = [{'id': 1, 'success': True, 'name': 'Lary'},
- {'id': 2, 'success': False, 'name': 'Rabi'},
- {'id': 3, 'success': True, 'name': 'Alex'}]
+stu = [{'id': 1, 'success': True, 'name': 'Lary', 'grade': 45 },
+ {'id': 2, 'success': False, 'name': 'Rabi', 'grade': 15},
+ {'id': 3, 'success': True, 'name': 'Alex', 'grade': 50}]
 
-print(sum(d['id'] for d in student))
+print(sum(d['id'] for d in stu))
 
-print(sum(d['success'] for d in student))
+print(sum(d['grade'] for d in stu))
