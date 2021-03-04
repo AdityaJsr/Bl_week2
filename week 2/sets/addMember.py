@@ -12,7 +12,7 @@ print(color_set)
 #Update multiple items
 color_set.update(["Blue", "Green"])
 print(color_set)
-a = input("Enter the color you want to ad to the set : ")
+a = input("Enter the color you want to add to the set : ")
 color_set.add(a)
 print(color_set)
 b = list(input("Enter the color you want to update to the set : ").split(','))
