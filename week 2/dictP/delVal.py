@@ -7,8 +7,17 @@ Modified time - ‎‎‎04 ‎March ‎2021‎
 """
 
 
-myDict = {'a':1,'b':2,'c':3,'d':4}
-print(myDict)
-if 'a' in myDict: 
-    del myDict['a']
-print(myDict)
+d1 = {'a':1,'b':2,'c':3,'d':4,'e':5}
+print(d1)
+
+def deleteVal():
+    key = input("Enter the key of the value you want to delete : ")
+    if key in d1:
+
+        del d1[key]
+    
+    print(d1)
+
+
+if __name__ == "__main__":
+    deleteVal()
