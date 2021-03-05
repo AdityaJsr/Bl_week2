@@ -19,7 +19,8 @@ def sort_list_last(tuples):
 print(sort_list_last([(2, 5), (1, 2), (4, 4), (2, 3), (2, 1)]))
 
 
-
+# a = [15,16,88,99]
+# print(a[-1])
 
 
 
