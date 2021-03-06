@@ -5,6 +5,8 @@ Ceation time - ‎‎05 ‎March ‎2021 ‏‎
 Modified time - ‎‎‎05 ‎March ‎2021‎
 
 """ 
+
+
 def user_input():
     a = input("Enter the values for the tuple with a space : ").split(' ')
     tup = (tuple(a)) 
