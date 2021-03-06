@@ -10,16 +10,21 @@ Ceation time - ‎‎06 ‎March ‎2021 ‏‎
 Modified time - ‎‎‎06 ‎March ‎2021‎
 
 """ 
-def add_string(str1):
-  length = len(str1)
+def add_string():
+    str1 = input("Enter the input string : ")
+    len1 = len(str1)
+    if len1 > 2:
+        if str1[-3:] == 'ing':
+            str1 += 'ly'
+        else:
+            str1 += 'ing'
+    
+    print(str1)
 
-  if length > 2:
-    if str1[-3:] == 'ing':
-      str1 += 'ly'
-    else:
-      str1 += 'ing'
+if __name__ == "__main__":
+    add_string()
 
-  return str1
-print(add_string('ab'))
-print(add_string('abc'))
-print(add_string('string'))
+
+
+
+
