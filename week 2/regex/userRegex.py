@@ -3,7 +3,7 @@ Title - User Registration System matches user's First, last name EmailID,
         phoneNum, Password. with regEx pattern.
 Author name - Aditya Kumar
 Ceation time - ‎‎08 ‎March ‎2021 ‏‎
-Modified time - ‎‎‎08 ‎March ‎2021‎
+Modified time - ‎‎‎09 ‎March ‎2021‎
 
 '''
 
@@ -43,7 +43,7 @@ def eMail():
 
 def phNumber():
     phoneNum = input("Enter the phone number with country code : ")
-    pattern = '\d{12}'
+    pattern = '\d{2} \d{10}'
     match = re.match(pattern,phoneNum)
     if match:
         print("True to the Pattern : ", match)
