@@ -60,7 +60,7 @@ def userEmailInput():
         userEmailInput()
 
 def emailValid(Email):
-    pattern = '^[a-z0-9]+[\._]?[a-z0-9]+[@]\w+[.]\w{2,3}$'
+    pattern = '^[a-z0-9]+[\._]?[a-z0-9]+[@][a-z]+[.]\w{2,3}$'
     match = re.match(pattern,Email)
     if match:
         print("True to the Pattern : ", match)
@@ -98,7 +98,7 @@ def passwordInput():
 
 def validate_password(passWord):
     
-    pattern = "^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$"
+    pattern = "^(?=.*[A-Za-z])(?=.*[A-Z])(?=.*[@$!%*#?&])[A-Za-z0-9\d@$!%*#?&]{8,}$"
     match = re.match(pattern,passWord)
     if match:
         print("True to the Pattern : ", match)
