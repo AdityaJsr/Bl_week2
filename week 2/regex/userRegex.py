@@ -30,11 +30,22 @@ def lName():
         print("Match Unsucessful : ")
         lName()
 
+def eMail():
+    Email = input("Enter your Email Id : ")
+    pattern = '^[a-z0-9]+[\._]?[a-z0-9]+[@]\w+[.]\w{2,3}$'
+    match = re.match(pattern,Email)
+    if match:
+        print("True to the Pattern : ", match)
+    else:
+        print("Match Unsucessful : ")
+        Email()
+
 
 def main():
     
     fName()
     lName()
+    eMail()
 
 
 
