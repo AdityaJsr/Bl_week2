@@ -9,6 +9,7 @@ Modified time - ‎‎‎08 ‎March ‎2021‎
 
 
 import re
+import getpass
 
 def fName():
     FirstName = input("Enter the First name : ")
@@ -40,13 +41,34 @@ def eMail():
         print("Match Unsucessful : ")
         Email()
 
+def phNumber():
+    phoneNum = input("Enter the phone number with country code : ")
+    pattern = '\d{12}'
+    match = re.match(pattern,phoneNum)
+    if match:
+        print("True to the Pattern : ", match)
+    else:
+        print("Match Unsucessful : ")
+        phNumber()
+
+def password():
+    phoneNum = getpass.getpass("Enter the desired password : ")
+    pattern = "^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$"
+    match = re.match(pattern,phoneNum)
+    if match:
+        print("True to the Pattern : ", match)
+    else:
+        print("Match Unsucessful : ")
+        password()
+
 
 def main():
     
     fName()
     lName()
     eMail()
-
+    phNumber()
+    password()
 
 
 if __name__ == "__main__":
