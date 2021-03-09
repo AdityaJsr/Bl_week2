@@ -11,64 +11,110 @@ Modified time - ‎‎‎09 ‎March ‎2021‎
 import re
 import getpass
 
-def fName():
-    FirstName = input("Enter the First name : ")
+
+
+def firstNameInput():
+    try:
+        FirstName = input("Enter the First name : ")
+    except Exception as e:
+        print("Ran into an exception : ", e)
+    if not first_Name(FirstName):
+        firstNameInput()
+
+def first_Name(FirstName):
     pattern = '(^[A-Z][a-zA-Z]{2,})'
     match = re.match(pattern,FirstName)
     if match:
         print("True to the Pattern : ", match)
+        return True
     else:
         print("Match Unsucessful : ")
-        fName()
+        return False
+        
+        
 
-def lName():
-    LastName = input("Enter the Last name : ")
+def lastNameInput():
+    try:
+        LastName = input("Enter the Last name : ")
+    except Exception as e:
+        print("Ran into an exception : ", e)
+    if not last_Name(LastName):
+        lastNameInput()
+
+def last_Name(LastName):
     pattern = '(^[A-Z][a-zA-Z]{2,})'
     match = re.match(pattern,LastName)
     if match:
         print("True to the Pattern : ", match)
+        return True
     else:
         print("Match Unsucessful : ")
-        lName()
+        return False
+        
+def userEmailInput():
+    try:
+        Email = input("Enter your Email Id : ")
+    except Exception as e:
+        print("Ran into an exception : ",e)
+    if not emailValid(Email):
+        userEmailInput()
 
-def eMail():
-    Email = input("Enter your Email Id : ")
+def emailValid(Email):
     pattern = '^[a-z0-9]+[\._]?[a-z0-9]+[@]\w+[.]\w{2,3}$'
     match = re.match(pattern,Email)
     if match:
         print("True to the Pattern : ", match)
+        return True
     else:
         print("Match Unsucessful : ")
-        Email()
+        return False
 
-def phNumber():
-    phoneNum = input("Enter the phone number with country code : ")
+
+def phoneNumInput():
+    try:
+        phoneNum = input("Enter the phone number with country code : ")
+    except Exception as e:
+        print("Ran into an exception : ",e)
+    if not phonenum_validate(phoneNum):
+        phoneNumInput()
+
+def phonenum_validate(phoneNum):
+    
     pattern = '\d{2} \d{10}'
     match = re.match(pattern,phoneNum)
     if match:
         print("True to the Pattern : ", match)
+        return True
     else:
         print("Match Unsucessful : ")
-        phNumber()
+        return False
+def passwordInput():
+    try:
+        passWord = getpass.getpass("Enter the desired password : ")
+    except Exception as e:
+        print("Ran into an exception : ",e)
+    if not validate_password(passWord):
+        passwordInput()   
 
-def password():
-    phoneNum = getpass.getpass("Enter the desired password : ")
+def validate_password(passWord):
+    
     pattern = "^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$"
-    match = re.match(pattern,phoneNum)
+    match = re.match(pattern,passWord)
     if match:
         print("True to the Pattern : ", match)
+        return True
     else:
         print("Match Unsucessful : ")
-        password()
+        return False
 
 
 def main():
     
-    fName()
-    lName()
-    eMail()
-    phNumber()
-    password()
+    firstNameInput()
+    lastNameInput()
+    userEmailInput()
+    phoneNumInput()
+    passwordInput()
 
 
 if __name__ == "__main__":
