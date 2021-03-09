@@ -20,11 +20,21 @@ def fName():
         print("Match Unsucessful : ")
         fName()
 
+def lName():
+    LastName = input("Enter the Last name : ")
+    pattern = '(^[A-Z][a-zA-Z]{2,})'
+    match = re.match(pattern,LastName)
+    if match:
+        print("True to the Pattern : ", match)
+    else:
+        print("Match Unsucessful : ")
+        lName()
 
 
 def main():
     
     fName()
+    lName()
 
 
 
